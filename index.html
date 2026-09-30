@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Kartu Memori</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="halaman-awal" class="halaman">
+        <header>
+            <h1>Kartu Memori</h1>
+            <p class="subjudul">Cari pasangan gambar yang sama!</p>
+        </header>
+        <main>
+            <div class="info-box">
+                <p>Selamat Datang :></p>
+                <p>Di game pasang gambar tema buah-buahan!</p>
+                <p>Selamat bermain, HAVE FUN!!</p>
+            </div>
+            <button id="btn-mulai" class="btn-utama">Mulai Main</button>
+        </main>
+    </div>
+
+    <div id="halaman-game" class="halaman" style="display: none;">
+        <header>
+            <button id="btn-kembali" class="btn-teks">← Kembali</button>
+            <h2>Cari Pasangan!</h2>
+        </header>
+        <main>
+            <div class="info-game">
+                <p>Percobaan: <span id="skor">0</span></p>
+                <p>Pasangan: <span id="pasangan">0</span> / 8</p>
+            </div>
+
+            <div id="papan" class="papan"></div>
+
+            <button id="btn-reset" class="btn-utama">Ulangi</button>
+        </main>
+    </div>
+
+    <div id="halaman-menang" class="halaman" style="display: none;">
+        <header>
+            <h1>Kamu Menang!</h1>
+        </header>
+        <main>
+            <p class="skor-akhir">Total Percobaan: <span id="skor-akhir">0</span></p>
+            <p>Terimakasih sudah memainkan game ini!</p>
+            <button id="btn-main-lagi" class="btn-utama">Main Lagi?</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
